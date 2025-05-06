@@ -156,6 +156,12 @@ const Index = () => {
               <h1 className="text-2xl md:text-3xl font-bold">Учителя-волонтеры школы №224</h1>
             </div>
             <div className="flex gap-4">
+              <Button variant="outline" className="bg-white text-blue-600 hover:bg-blue-50" asChild>
+                <Link to="/materials">
+                  <Icon name="FileText" className="mr-2 h-4 w-4" />
+                  Учебные материалы
+                </Link>
+              </Button>
               <Button variant="outline" className="bg-white text-blue-600 hover:bg-blue-50">
                 <Icon name="LogIn" className="mr-2 h-4 w-4" />
                 Войти
@@ -256,7 +262,7 @@ const Index = () => {
                               <div className="flex">
                                 {[...Array(5)].map((_, i) => (
                                   <Icon 
-                                    key={i} 
+                                    key={i = i 
                                     name="Star" 
                                     className={`h-4 w-4 ${i < Math.floor(teacher.rating) ? 'text-yellow-400' : 'text-gray-300'}`} 
                                     fill={i < Math.floor(teacher.rating) ? 'currentColor' : 'none'}
